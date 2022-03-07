@@ -73,8 +73,10 @@
 \newcommand{\myLineGrayVskipBottom}{\myLineGray\vskip\myLenLineHeightButLine}
 \newcommand{\myLineGrayVskipTop}{\vskip\myLenLineHeightButLine\myLineGray}
 
+
+\newcommand\bigcircle{\raisebox{-0.5mm}{\scalebox{1.7}{$\circ$}}}
 \newcommand{\myTodo}{\myLineHeightButLine$\square$\myLinePlain}
-\newcommand{\myTodoLineGray}{\myLineHeightButLine$\square$\myLineGray}
+\newcommand{\myTodoLineGray}{\myLineHeightButLine\bigcircle\myLineGray}
 
 \newcommand{\myDotGrid}[2]{\leavevmode\multido{\dC=0mm+5mm}{#1}{\multido{\dR=0mm+5mm}{#2}{\put(\dR,\dC){\circle*{0.1}}}}}
 
