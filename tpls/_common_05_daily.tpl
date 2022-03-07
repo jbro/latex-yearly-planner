@@ -4,7 +4,7 @@
   \myUnderline{ToDo\myDummyQ}
   \Repeat{\myNumDailyTodos}{\myTodoLineGray}
   \vskip\dimexpr5.4mm
-  \myUnderline{Notes $\vert$ {{ $today.LinkLeaf "More" "More" }}\hfill{}\hyperlink{Notes Index}{All notes}}
+  \myUnderline{Notes $\vert$ {{ $today.LinkLeaf "More" "More" }}}
   \myMash[\myDailySpring]{\myNumDailyNotes}{\myNumDotWidthTwoThirds}
 \end{minipage}
 \hspace{\myLenTriColSep}%
