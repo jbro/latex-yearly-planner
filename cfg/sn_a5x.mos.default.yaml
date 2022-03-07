@@ -11,7 +11,8 @@ layout:
 
   numbers:
     weeklylines: 10
-    dailynotes: 24
+    dailytodos: 15
+    dailynotes: 17
     dotwidthtwothirds: 19
     dotwidthfull: 29
 
