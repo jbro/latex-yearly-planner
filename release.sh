@@ -1,7 +1,7 @@
 set -eo pipefail
 
-CURRENT_YEAR=$(date +"%Y")
-NEXT_YEAR=$((CURRENT_YEAR+1))
+START_YEAR=$(date +"%Y")
+END_YEAR=$((START_YEAR+9))
 
 _configurations=(
   # 1 "cfg/base.yaml,cfg/template_breadcrumb.yaml,cfg/sn_a5x.breadcrumb.default.yaml"                                             "sn_a5x.breadcrumb.default"
@@ -28,7 +28,7 @@ _configurations=(
 _configurations_len=${#_configurations[@]}
 
 function createPDFs() {
-  for _year in $CURRENT_YEAR $NEXT_YEAR; do
+  for _year in $(seq $START_YEAR $END_YEAR); do
     for _idx in $(seq 0 3 $((_configurations_len-1))); do
       _passes=${_configurations[_idx]}
       _cfg=${_configurations[_idx+1]}
