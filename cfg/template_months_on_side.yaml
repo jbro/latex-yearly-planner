@@ -53,3 +53,9 @@ pages:
         tpls:
           - mos_08_notes_index.tpl
           - mos_09_notes.tpl
+
+  - name: stamps
+    renderblocks:
+      - funcname: stamps
+        tpls:
+          - mos_10_stamps.tpl

@@ -23,7 +23,7 @@ func NotesIndexed(cfg config.Config, tpls []string) (page.Modules, error) {
 				"SideQuarters": year.SideQuarters(0),
 				"SideMonths":   year.SideMonths(0),
 				"Extra":        index.PrevNext(idx).WithTopRightCorner(cfg.ClearTopRightCorner),
-				"Extra2":       extra2(cfg.ClearTopRightCorner, false, true, nil, 0),
+				"Extra2":       extra2(cfg.ClearTopRightCorner, false, true, false, nil, 0),
 			},
 		})
 	}
@@ -42,7 +42,7 @@ func NotesIndexed(cfg config.Config, tpls []string) (page.Modules, error) {
 					"Extra": nt.
 						PrevNext(cfg.Layout.Numbers.NotesOnPage * cfg.Layout.Numbers.NotesIndexPages).
 						WithTopRightCorner(cfg.ClearTopRightCorner),
-					"Extra2": extra2(cfg.ClearTopRightCorner, false, false, nil, idxPage+1),
+					"Extra2": extra2(cfg.ClearTopRightCorner, false, false, false, nil, idxPage+1),
 				},
 			})
 		}
