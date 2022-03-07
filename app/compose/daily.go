@@ -7,7 +7,6 @@ import (
 )
 
 var Daily = DailyStuff("", "")
-var DailyReflect = DailyStuff("Reflect", "Reflect")
 var DailyNotes = DailyStuff("More", "Notes")
 
 func DailyStuff(prefix, leaf string) func(cfg config.Config, tpls []string) (page.Modules, error) {

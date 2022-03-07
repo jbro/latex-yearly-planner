@@ -35,11 +35,11 @@ pages:
         tpls:
           - mos_05_daily.tpl
 
-  - name: daily_reflect
-    renderblocks:
-      - funcname: daily_reflect
-        tpls:
-          - mos_06_daily_reflect.tpl
+  # - name: daily_reflect
+  #   renderblocks:
+  #     - funcname: daily_reflect
+  #       tpls:
+  #         - mos_06_daily_reflect.tpl
 
   - name: daily_notes
     renderblocks:

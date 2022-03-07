@@ -128,7 +128,6 @@ var ComposerMap = map[string]Composer{
 	"monthly":       compose.Monthly,
 	"weekly":        compose.Weekly,
 	"daily":         compose.Daily,
-	"daily_reflect": compose.DailyReflect,
 	"daily_notes":   compose.DailyNotes,
 	"notes_indexed": compose.NotesIndexed,
 }
